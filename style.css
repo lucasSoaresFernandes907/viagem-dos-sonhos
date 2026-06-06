@@ -140,3 +140,52 @@ h1 {
 .balao-contato button:hover {
     background-color: #0b523e;
 }
+/* ==========================================================
+   ADICIONAR NO FINAL DO SEU ARQUIVO STYLE.CSS ORIGINAL
+   ========================================================== */
+
+.topo-site {
+    text-align: center; /* Garante o título no centro */
+    padding: 20px;
+}
+
+.topo-site h1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+/* Garante que os blocos novos sigam o padrão do seu site */
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Botão Amarelo de Navegação */
+.navegacao {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-proximo {
+    background-color: #ffb300; /* Amarelo ouro */
+    color: #004d40;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.btn-proximo:hover {
+    background-color: #ffa000;
+    transform: scale(1.05);
+}
