@@ -8,11 +8,11 @@
 </head>
 <body>
 
-    <header class="topo-site">
-        <img src="img/195a33def6f0f77846eb7f2474d947cc.jpg" alt="Coqueiro" class="coqueiro">
-<h1>Viagem dos Sonhos</h1>
-<img src="img/195a33def6f0f77846eb7f2474d947cc.jpg" alt="Coqueiro" class="coqueiro">
-    </header>
+   <header class="topo-site">
+  <img src="img/195a33def6f0f77846eb7f2474d947cc.jpg" alt="Coqueiro" class="coqueiro">
+  <h1>Viagem dos Sonhos</h1>
+  <img src="img/195a33def6f0f77846eb7f2474d947cc.jpg" alt="Coqueiro" class="coqueiro">
+</header>
 
     <main class="container-cards">
         <article class="card">
@@ -22,32 +22,55 @@
             <p class="preco">R$ 800,00</p>
         </article>
 
+       <article class="card">
+ <img src="img/buzios-praia-ferradurinha-1920x1080-1.jpg.webp" alt="Praia de Buzios" class="imagem-card">
+            <h2>buzios</h2>
+            <p>Praias paradisíacas, águas cristalinas e paisagens encantadoras para relaxar.</p>
+            <p class="preco">R$ 700,00</p>
+      
+        </article>
 
-    </main>
+        <article class="card">
+ <img src="img/praias-do-rio.webp" alt="Praia do rj" class="imagem-card">
+            <h2>rio de janeiro</h2>
+            <p>Do Cristo Redentor às praias de Copacabana, viva momentos inesquecíveis.</p>
+            <p class="preco">R$ 900,00</p>
+      
+        </article>
+<form class="card-formulario">
+  <h3>Agendar Viagem</h3>
 
-    <footer class="rodape-container">
-        
-        <div class="balao-contato">
-            <h3>Entre em Contato</h3>
-            <input type="text" placeholder="Seu Nome">
-            <input type="email" placeholder="Seu E-mail">
-            <button>Enviar</button>
-        </div>
+  <label for="nome">Seu Nome:</label>
+  <input type="text" id="nome" placeholder="Digite seu nome completo" required>
 
-        <div class="balao-datas">
-            <h3>Agendar Viagem</h3>
-            <div class="campos-datas">
-                <label>Ida:</label>
-                <input type="date">
-                <label>Volta:</label>
-                <input type="date">
-                <div class="navegacao">
-    <a href="avaliacao.html" class="btn-proximo">Deixar uma Avaliação ➔</a>
+  <label for="telefone">Telefone / WhatsApp:</label>
+  <input type="tel" id="telefone" placeholder="(XX) 99999-9999" required>
+
+  <label for="email">Seu E-mail:</label>
+  <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+  <label for="destino">Escolha o Destino:</label>
+  <select id="destino" required>
+    <option value="" disabled selected>Selecione um destino...</option>
+    <option value="rio">Rio de Janeiro</option>
+    <option value="buzios">Búzios</option>
+    <option value="cabo-frio">Cabo Frio</option>
+  </select>
+
+  <div class="datas">
+    <div>
+      <label for="ida">Ida:</label>
+      <input type="date" id="ida" required>
+    </div>
+    <div>
+      <label for="volta">Volta:</label>
+      <input type="date" id="volta" required>
+    </div>
+  </div>
+
+  <button type="submit" class="btn-enviar">Confirmar Reserva</button>
+</form>
+
+<div class="navegacao">
+  <a href="dashboard.html" class="btn-proximo">ir para o dashboard →</a>
 </div>
-            </div>
-        </div>
-
-    </footer>
-
-</body>
-</html>
